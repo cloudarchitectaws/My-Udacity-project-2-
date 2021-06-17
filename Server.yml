@@ -56,9 +56,10 @@ Resources:
           sudo su
           sudo apt-get update -y
           sudo apt-get install -y apache2
-          sudo systemctl start apache2.servicec
+          sudo systemctl start apache2.service
           cd /var/www/html
-          sudo wget -P . https://myudagramproject2natwest.s3.ap-south-1.amazonaws.com/index.html        
+          rm -rf index.html
+          sudo wget -P .  https://myudagramproject2natwest.s3.ap-south-1.amazonaws.com/index.html        
       ImageId: ami-0860c9429baba6ad2      
       SecurityGroups:
       - Ref: WebServerSecGroup
