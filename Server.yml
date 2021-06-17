@@ -54,9 +54,9 @@ Resources:
         Fn::Base64: !Sub |
           #!/bin/bash 
           sudo su
-          sudo yum update -y
-          sudo yum install -y httpd
-          sudo systemctl start httpd
+          sudo apt-get update -y
+          sudo apt-get install -y apache2
+          sudo systemctl start apache2.servicec
           cd /var/www/html
           sudo wget -P . https://myudagramproject2natwest.s3.ap-south-1.amazonaws.com/index.html        
       ImageId: ami-0860c9429baba6ad2      
