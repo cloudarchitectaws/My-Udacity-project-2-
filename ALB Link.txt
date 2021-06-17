@@ -1,0 +1,5 @@
+ALB Link 
+
+Click the below link you get the below result
+
+http://udagr-webap-60rmjfv1sovi-1130262942.ap-south-1.elb.amazonaws.com/ 
