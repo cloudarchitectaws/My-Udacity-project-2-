@@ -1,0 +1,14 @@
+Description: >
+    Sivakumar KS  / Udacity 2021 /s3 Bucket Creation
+
+Parameters:
+
+    EnvironmentName:
+        Description: An environment name that will be prefixed to resource names
+        Type: String
+    Resources:
+      S3Bucket:
+        Type: 'AWS::S3::Bucket'
+        DeletionPolicy: Retain
+        Properties:
+          BucketName: myudagramproject2natwest

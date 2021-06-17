@@ -1,0 +1,5 @@
+Create File 
+
+create.bat UdadramNetwork Network.yml network-parm.json
+
+create.sh UdagramServer server.yml server-param.jso
